@@ -6,18 +6,18 @@
       @@include('components/header.html', { })
       <main>
         <section class="py-[70px] md:pb-[100px] md:pt-[80px]">
-          <div class="container flex flex-col items-center gap-y-[37px]">
+          <div class="mx-auto flex max-w-[1182px] flex-col items-center gap-y-[37px] px-4">
             <img src="./img/logo.webp" alt="Logo" class="h-auto w-full max-w-[400px] object-contain md:max-w-[600px]" />
             <a
               href="#"
-              class="border-divansparent divacking-[2.5px] divansition-colors inline-flex h-11 items-center justify-center rounded-[50px] border bg-white px-9 text-center text-lg !leading-none text-black hover:border-blue-200 md:px-20 md:text-2xl"
+              class="inline-flex h-11 items-center justify-center rounded-[50px] border border-transparent bg-white px-9 text-center text-lg !leading-none tracking-[2.5px] text-black transition-colors hover:border-blue-200 md:px-20 md:text-2xl"
               >www.penneastfcu.org</a
             >
           </div>
         </section>
 
         <section class="bg-white py-[70px] md:pb-[100px] md:pt-[80px]">
-          <div class="container flex flex-col justify-between gap-5 md:flex-row md:gap-10">
+          <div class="mx-auto flex max-w-[1200px] flex-col justify-between gap-5 px-4 md:flex-row md:gap-10">
             <div class="md:max-w-[350px]">
               <h2 class="text-3xl font-bold !leading-none text-black sm:text-4xl md:text-5xl">Sdiveamline Your Money Management</h2>
             </div>
@@ -127,7 +127,7 @@
           <div class="">
             <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Brand Guidelines</h2>
             <div class="mx-auto mb-[80px] flex max-w-[1152px] flex-col gap-x-[45px] gap-y-10 px-4 lg:flex-row">
-              <div class="w-full max-w-[731px] shrink-0">
+              <div class="w-full max-w-[731px] shrink-0 max-lg:mx-auto">
                 <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Fonts</h3>
                 <div class="rounded-[10px] bg-white p-[25px]">
                   <div class="w-full">
@@ -164,9 +164,9 @@
 
               <div class="grow">
                 <!-- Colors -->
-                <div class="mb-8">
+                <div class="mb-8 max-lg:mx-auto max-lg:max-w-[400px]">
                   <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Color Scheme</h3>
-                  <div class="grid auto-rows-[75px] grid-cols-[auto_75px] gap-x-5 gap-y-[12px] max-lg:max-w-[400px] [&>*:nth-child(1)]:row-span-3">
+                  <div class="grid auto-rows-[75px] grid-cols-[auto_75px] gap-x-5 gap-y-[12px] [&>*:nth-child(1)]:row-span-3">
                     <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #000; background-color: #fdbd3d">#FDBD3D</div>
                     <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #000; background-color: #ffffff">#FFFFFF</div>
                     <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #fff; background-color: #052742">#052742</div>
@@ -174,7 +174,7 @@
                   </div>
                 </div>
                 <!-- Buttons -->
-                <div class="max-lg:max-w-[500px]">
+                <div class="max-lg:mx-auto max-lg:max-w-[500px]">
                   <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Buttons</h3>
                   <div class="flex h-[50px] w-full items-center justify-center rounded-[5px] text-base font-bold" style="color: #000; background-color: #fdbd3d">About Us</div>
                 </div>
