@@ -1,16 +1,9 @@
-
-// import { useDynamicAdapt } from './modules/dynamicAdapt.js';
-// import "./modules/sliders.js";
-// import gsap from "gsap";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
-// import AOS from 'aos';
-// import fslightbox from 'fslightbox';
-// import Choices from 'choices.js';
-// import { CountUp } from '../../node_modules/countup.js/dist/countUp.js';
-// import noUiSlider from 'nouislider';
-// import MicroModal from 'micromodal';
+import Beforeafter from "./modules/before-after.js";
+import "./modules/play-video.js";
 
 function app() {
+  const beforeAfterSlider = new Beforeafter("before-after");
+  const beforeAfterSliderMob = new Beforeafter("before-after-mob");
 }
 
-document.addEventListener('DOMContentLoaded', app);
+document.addEventListener("DOMContentLoaded", app);

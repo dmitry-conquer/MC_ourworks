@@ -18,6 +18,7 @@ export const path = {
       ],
       svg: `${srcFolder}/img/svg-to-sprite/*.svg`,
       fonts: `${srcFolder}/fonts/**/*.woff2`,
+      video: `${srcFolder}/video/**/*`,
    },
    build: {
       html: `${buildFolder}/`,
@@ -27,6 +28,7 @@ export const path = {
       images: `${buildFolder}/img/`,
       fonts: `${buildFolder}/fonts/`,
       sprites: `${buildFolder}/sprites/`,
+      video: `${buildFolder}/video/`,
    },
    watch: {
       js: `${srcFolder}/js/**/*.js`,

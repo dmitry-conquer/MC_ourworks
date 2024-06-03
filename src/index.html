@@ -2,9 +2,197 @@
 <html lang="en">
   @@include('components/head.html', { 'title': 'Homepage' })
   <body>
-    <div class="wrapper">
+    <div class="wrapper bg-primary font-[Archivo]">
       @@include('components/header.html', { })
-      <main></main>
+      <main>
+        <section class="py-[70px] md:pb-[100px] md:pt-[80px]">
+          <div class="container flex flex-col items-center gap-y-[37px]">
+            <img src="./img/logo.webp" alt="Logo" class="h-auto w-full max-w-[400px] object-contain md:max-w-[600px]" />
+            <a
+              href="#"
+              class="border-divansparent divacking-[2.5px] divansition-colors inline-flex h-11 items-center justify-center rounded-[50px] border bg-white px-9 text-center text-lg !leading-none text-black hover:border-blue-200 md:px-20 md:text-2xl"
+              >www.penneastfcu.org</a
+            >
+          </div>
+        </section>
+
+        <section class="bg-white py-[70px] md:pb-[100px] md:pt-[80px]">
+          <div class="container flex flex-col justify-between gap-5 md:flex-row md:gap-10">
+            <div class="md:max-w-[350px]">
+              <h2 class="text-3xl font-bold !leading-none text-black sm:text-4xl md:text-5xl">Sdiveamline Your Money Management</h2>
+            </div>
+            <p class="max-w-[754px] text-base text-gray">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosdivud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et.dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nosdivud
+            </p>
+          </div>
+        </section>
+
+        <section class="px-4 pt-[70px] md:pt-[80px]">
+          <div class="mx-auto max-w-[1270px]">
+            <h2 class="mb-6 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Before and After</h2>
+            <div id="before-after" class="relative mx-auto mb-14 aspect-[16/9] max-w-[1500px] cursor-e-resize overflow-hidden sm:aspect-[16/8] lg:mb-[129px]">
+              <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 bg-white">
+                <svg
+                  widdiv="55"
+                  height="56"
+                  viewBox="0 0 55 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute right-0 top-1/2 z-[100] block size-12 translate-x-1/2">
+                  <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
+                  <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
+                  <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
+                  <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
+                </svg>
+              </div>
+              <div class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat">
+                <img src="./img/before_pc.webp" alt="" class="pointer-events-none block h-full max-w-none select-none [user-drag:none]" />
+              </div>
+              <div class="after absolute left-0 top-0 h-full w-full bg-cover bg-no-repeat">
+                <img src="./img/after_pc.webp" alt="" class="pointer-events-none block h-full max-w-none select-none [user-drag:none]" />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-x-14 gap-y-20 overflow-hidden max-lg:items-center lg:max-h-[650px] lg:flex-row">
+              <div class="lg:max-w-[650px] lg:pt-[63px]">
+                <h2 class="mb-6 text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-9 md:text-5xl">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                <p class="mb-6 text-base text-gray md:mb-9">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosdivud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.
+                </p>
+                <a
+                  href="#"
+                  class="border-divansparent flex h-12 w-full max-w-[400px] items-center justify-center rounded-[40px] border bg-secondary text-xl text-white duration-300 hover:border-secondary hover:bg-white hover:text-secondary md:h-[72px] md:text-2xl"
+                  >View Full Website</a
+                >
+              </div>
+
+              <div class="flex max-h-[650px] shrink-0 items-start lg:h-full">
+                <div class="relative h-full w-[340px] overflow-hidden rounded-[65px] bg-white sm:w-[390px] sm:rounded-[80px]">
+                  <img src="./img/mob_frame.webp" alt="Mobile frame" class="pointer-events-none absolute left-0 top-0 z-[60] h-full w-full select-none [user-drag:none]" />
+                  <div id="before-after-mob" class="relative mt-20 aspect-[7.5/16] w-full cursor-e-resize overflow-hidden">
+                    <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 bg-white">
+                      <svg
+                        class="absolute right-0 top-1/4 z-[100] block size-12 translate-x-1/2"
+                        width="55"
+                        height="56"
+                        viewBox="0 0 55 56"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
+                        <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
+                        <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
+                        <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat">
+                      <img src="./img/before_mob.webp" alt="" class="pointer-events-none block h-full max-w-none select-none" />
+                    </div>
+                    <div class="after absolute left-0 top-0 h-full w-full bg-cover bg-no-repeat">
+                      <img src="./img/after_mob.webp" alt="" class="pointer-events-none block h-full max-w-none select-none" />
+                    </div>
+                  </div>
+                </div>
+                <p class="hidden text-[144px] font-bold !leading-none text-[#D9E7F2] [writing-mode:vertical-lr] sm:block">MOBILE</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white py-[70px] md:pb-[100px] md:pt-[80px]">
+          <div class="mx-auto max-w-[1270px] px-4">
+            <div class="mx-auto mb-8 flex flex-col justify-between gap-5 md:mb-14 md:flex-row md:gap-10">
+              <div class="md:max-w-[350px]">
+                <h2 class="text-3xl font-bold !leading-none text-black sm:text-4xl md:text-5xl">dive Challenge</h2>
+              </div>
+              <p class="max-w-[754px] text-base text-gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosdivud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+              </p>
+            </div>
+            <div class="video-section group relative cursor-pointer">
+              <button class="absolute left-1/2 top-1/2 z-10 size-20 -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:scale-[1.05] sm:size-24 lg:size-32" type="button">
+                <img src="./img/play.svg" alt="Play video" />
+              </button>
+              <video src="./video/video.mp4" class="h-full w-full"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-[70px] md:pb-[100px] md:pt-[80px]">
+          <div class="">
+            <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Brand Guidelines</h2>
+            <div class="mx-auto mb-[80px] flex max-w-[1152px] flex-col gap-x-[45px] gap-y-10 px-4 lg:flex-row">
+              <div class="w-full max-w-[731px] shrink-0">
+                <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Fonts</h3>
+                <div class="rounded-[10px] bg-white p-[25px]">
+                  <div class="w-full">
+                    <div class="mb-5 flex items-center gap-x-10">
+                      <div class="mb-2 w-full max-w-[120px] shrink-0 text-left text-base text-grayLight sm:max-w-[330px]">Style</div>
+                      <div class="mb-2 w-full grow text-left text-base text-grayLight">Weight</div>
+                      <div class="mb-2 w-full grow text-left text-base text-grayLight">Size</div>
+                    </div>
+                    <div class="[&>div:not(:last-child)]:mb-[37px]">
+                      <div class="flex items-center gap-x-10">
+                        <div class="w-full max-w-[120px] shrink-0 !leading-none max-sm:!text-2xl sm:max-w-[330px]" style="font-size: 64px; font-weight: bold">Heading 1</div>
+                        <div class="w-full min-w-[62px] grow text-lg sm:text-xl">Bold</div>
+                        <div class="w-full grow text-lg sm:text-xl">64</div>
+                      </div>
+                      <div class="flex items-center gap-x-10">
+                        <div class="w-full max-w-[120px] shrink-0 !leading-none max-sm:!text-xl sm:max-w-[330px]" style="font-size: 36px; font-weight: bold">Heading 2</div>
+                        <div class="w-full min-w-[62px] grow text-lg sm:text-xl">Bold</div>
+                        <div class="w-full grow text-lg sm:text-xl">36</div>
+                      </div>
+                      <div class="flex items-center gap-x-10">
+                        <div class="w-full max-w-[120px] shrink-0 !leading-none max-sm:!text-lg sm:max-w-[330px]" style="font-size: 20px; font-weight: bold">Heading 3</div>
+                        <div class="w-full min-w-[62px] grow text-lg sm:text-xl">Bold</div>
+                        <div class="w-full grow text-lg sm:text-xl">20</div>
+                      </div>
+                      <div class="flex items-center gap-x-10">
+                        <div class="w-full max-w-[120px] shrink-0 !leading-none max-sm:!text-base sm:max-w-[330px]" style="font-size: 18px; font-weight: normal">Heading 4</div>
+                        <div class="w-full min-w-[62px] grow text-lg sm:text-xl">Regular</div>
+                        <div class="w-full grow text-lg sm:text-xl">18</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <!-- Colors -->
+                <div class="mb-8">
+                  <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Color Scheme</h3>
+                  <div class="grid auto-rows-[75px] grid-cols-[auto_75px] gap-x-5 gap-y-[12px] max-lg:max-w-[400px] [&>*:nth-child(1)]:row-span-3">
+                    <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #000; background-color: #fdbd3d">#FDBD3D</div>
+                    <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #000; background-color: #ffffff">#FFFFFF</div>
+                    <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #fff; background-color: #052742">#052742</div>
+                    <div class="flex items-center justify-center rounded-[10px] text-[12px] font-bold" style="color: #fff; background-color: #0e5ca5">#0E5CA5</div>
+                  </div>
+                </div>
+                <!-- Buttons -->
+                <div class="max-lg:max-w-[500px]">
+                  <h3 class="mb-2 text-lg text-grayLight sm:text-xl">Buttons</h3>
+                  <div class="flex h-[50px] w-full items-center justify-center rounded-[5px] text-base font-bold" style="color: #000; background-color: #fdbd3d">About Us</div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto flex max-w-[1200px] flex-col justify-between gap-5 px-4 md:flex-row md:gap-10">
+              <div class="shrink-0 md:max-w-[390px]">
+                <h2 class="text-3xl font-bold !leading-none text-black sm:text-4xl md:text-5xl">Building a Brand Through UX</h2>
+              </div>
+              <p class="max-w-[754px] text-base text-gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
       @@include('components/footer.html', { })
     </div>
     <script type="module" crossorigin src="./js/app.min.js"></script>
