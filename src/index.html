@@ -33,26 +33,26 @@
         <section class="px-4 pt-[70px] md:pt-[80px]">
           <div class="mx-auto max-w-[1270px]">
             <h2 class="mb-6 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Before and After</h2>
-            <div id="before-after" class="relative mx-auto mb-14 aspect-[16/9] max-w-[1500px] cursor-e-resize overflow-hidden sm:aspect-[16/8] lg:mb-[129px]">
-              <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 bg-white">
-                <svg
-                  widdiv="55"
-                  height="56"
-                  viewBox="0 0 55 56"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="absolute right-0 top-1/2 z-[100] block size-12 translate-x-1/2">
-                  <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
-                  <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
-                  <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
-                  <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
-                </svg>
-              </div>
-              <div class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat">
-                <img src="./img/before_pc.webp" alt="" class="pointer-events-none block h-full max-w-none select-none [user-drag:none]" />
-              </div>
-              <div class="after absolute left-0 top-0 h-full w-full bg-cover bg-no-repeat">
-                <img src="./img/after_pc.webp" alt="" class="pointer-events-none block h-full max-w-none select-none [user-drag:none]" />
+            <div class="relative mb-14 h-[600px] overflow-x-hidden overflow-y-scroll lg:mb-[129px]">
+              <div>
+                <div id="before-after" class="relative mx-auto h-full w-full max-w-[1500px]">
+                  <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 border-x border-black/10 bg-white">
+                    <button class="sticky right-0 top-1/2 z-[100] block size-10 -translate-x-[25px] cursor-e-resize sm:size-12" type="button">
+                      <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none">
+                        <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
+                        <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
+                        <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
+                        <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat"
+                    style="background-image: url(&quot;./img/ba_1.webp&quot;)"></div>
+                  <div class="after h-full w-full">
+                    <img src="./img/ba_2.webp" alt="" class="pointer-events-none block w-full max-w-none select-none" />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -74,26 +74,30 @@
               <div class="flex max-h-[650px] shrink-0 items-start lg:h-full">
                 <div class="relative h-full w-[340px] overflow-hidden rounded-[65px] bg-white sm:w-[390px] sm:rounded-[80px]">
                   <img src="./img/mob_frame.webp" alt="Mobile frame" class="pointer-events-none absolute left-0 top-0 z-[60] h-full w-full select-none [user-drag:none]" />
-                  <div id="before-after-mob" class="relative mt-20 aspect-[7.5/16] w-full cursor-e-resize overflow-hidden">
-                    <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 bg-white">
-                      <svg
-                        class="absolute right-0 top-1/4 z-[100] block size-12 translate-x-1/2"
-                        width="55"
-                        height="56"
-                        viewBox="0 0 55 56"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
-                        <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
-                        <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
-                        <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
-                      </svg>
-                    </div>
-                    <div class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat">
-                      <img src="./img/before_mob.webp" alt="" class="pointer-events-none block h-full max-w-none select-none" />
-                    </div>
-                    <div class="after absolute left-0 top-0 h-full w-full bg-cover bg-no-repeat">
-                      <img src="./img/after_mob.webp" alt="" class="pointer-events-none block h-full max-w-none select-none" />
+                  <div class="absolute left-0 top-0 z-50 h-16 w-full bg-white"></div>
+
+                  <div class="aspect-[7.5/16]">
+                    <div class="relative h-[650px] overflow-y-scroll overflow-x-hidden">
+                      <div>
+                        <div id="before-after-mob" class="relative mt-20 h-full w-full cursor-e-resize">
+                          <div class="pointer absolute left-1/2 top-0 z-50 h-full w-2 border-x border-black/10 bg-white">
+                            <button class="sticky right-0 top-1/2 z-[100] block size-10 -translate-x-[25px] cursor-e-resize sm:size-12" type="button">
+                              <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none">
+                                <circle cx="27.4854" cy="27.8995" r="27.4854" fill="white" />
+                                <circle cx="27.485" cy="27.899" r="21.8951" fill="#001253" />
+                                <path d="M13.9766 27.8998L20.9644 21.0413L20.9644 34.7583L13.9766 27.8998Z" fill="white" />
+                                <path d="M41.9297 27.9L34.9419 34.7585L34.9419 21.0415L41.9297 27.9Z" fill="white" />
+                              </svg>
+                            </button>
+                          </div>
+                          <div
+                            class="before absolute left-0 top-0 z-30 h-full w-1/2 overflow-hidden bg-cover bg-no-repeat"
+                            style="background-image: url(&quot;./img/mob_2.webp&quot;)"></div>
+                          <div class="after h-full w-full">
+                            <img src="./img/mob_1.webp" alt="" class="pointer-events-none block w-full max-w-none select-none" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -123,7 +127,7 @@
           </div>
         </section>
 
-        <section class="py-[70px] md:pb-[100px] md:pt-[80px]">
+        <section class="py-[35px] md:pb-[60px] md:pt-[80px]">
           <div class="">
             <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Brand Guidelines</h2>
             <div class="mx-auto mb-[80px] flex max-w-[1152px] flex-col gap-x-[45px] gap-y-10 px-4 lg:flex-row">
@@ -189,6 +193,93 @@
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-[35px] md:pb-[60px] md:pt-[40px]">
+          <div class="mx-auto max-w-[1285px] px-4">
+            <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Low-fidelity Wireframes</h2>
+            <div class="flex flex-col gap-x-5 gap-y-5 md:flex-row">
+              <div class="bg-white p-5 md:w-1/2">
+                <img src="./img/sch1.webp" alt="Wireframe" class="h-full w-full" />
+              </div>
+              <div class="md:w-1/2">
+                <div class="mb-5 bg-white p-5 sm:mb-10 lg:mb-[72px]">
+                  <img src="./img/sch2.webp" alt="Wireframe" class="h-full w-full" />
+                </div>
+                <p class="mx-auto max-w-[480px] text-xl font-bold !leading-tight text-black sm:text-2xl lg:text-3xl">
+                  A two-dimensional visual representation of a web page, app interface, or product layout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-[50px] md:pb-[80px] md:pt-[40px]">
+          <div class="mx-auto max-w-[1270px] px-4">
+            <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">High-fidelity Prototyping</h2>
+            <div class="relative mb-12 md:mb-20">
+              <div class="max-w-[56%]">
+                <p class="mb-1 text-sm text-[#B1C9DF] sm:text-base">Home Page</p>
+                <div class="rounded-[10px] bg-white p-5 shadow-2xl">
+                  <img src="./img/screen1.webp" alt="Home Page" class="size-full" />
+                </div>
+              </div>
+              <div class="absolute right-0 top-1/2 w-full max-w-[55%] -translate-y-1/2">
+                <p class="mb-1 text-sm text-[#B1C9DF] max-md:text-right sm:text-base md:pl-52">Sub Page</p>
+                <div class="size-full rounded-[10px] bg-white p-5 shadow-2xl">
+                  <img src="./img/screen2.webp" alt="Sub Page" class="size-full" />
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto flex max-w-[1270px] flex-col justify-between gap-5 px-4 md:flex-row md:gap-10">
+              <div class="shrink-0 md:max-w-[390px]">
+                <h2 class="text-3xl font-bold !leading-none text-black sm:text-4xl md:text-5xl">Client Success</h2>
+              </div>
+              <p class="max-w-[754px] text-base text-gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white py-[70px] lg:pb-[90px] lg:pt-[100px]">
+          <div class="mx-auto max-w-[1200px] px-4">
+            <div class="mb-8 flex flex-wrap items-center justify-between gap-x-10">
+              <h2 class="text-2xl font-bold lg:text-3xl">Additional Client Work</h2>
+              <a href="#" class="text-xl duration-300 hover:text-secondary lg:text-2xl">View All Work</a>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,_minmax(160px,_1fr))] gap-8">
+              <article class="flex grow flex-col">
+                <a href="#" class="group aspect-square overflow-hidden rounded-[10px]">
+                  <img src="./img/work1.webp" alt="Softrip" class="size-full object-cover duration-500 group-hover:scale-[1.05]" />
+                </a>
+                <div class="mt-3 lg:mt-7">
+                  <h3 class="text-lg font-bold !leading-tight lg:text-xl">Softrip</h3>
+                  <p class="text-base !leading-tight">Lorem ipsum dolor sit amet, consectetu.</p>
+                </div>
+              </article>
+              <article class="flex flex-col">
+                <a href="#" class="group aspect-square overflow-hidden rounded-[10px]">
+                  <img src="./img/work1.webp" alt="Softrip" class="size-full object-cover duration-500 group-hover:scale-[1.05]" />
+                </a>
+                <div class="mt-3 lg:mt-7">
+                  <h3 class="text-lg font-bold !leading-tight lg:text-xl">Softrip</h3>
+                  <p class="text-base !leading-tight">Lorem ipsum dolor sit amet, consectetu.</p>
+                </div>
+              </article>
+              <article class="flex flex-col">
+                <a href="#" class="group aspect-square overflow-hidden rounded-[10px]">
+                  <img src="./img/work1.webp" alt="Softrip" class="size-full object-cover duration-500 group-hover:scale-[1.05]" />
+                </a>
+                <div class="mt-3 lg:mt-7">
+                  <h3 class="text-lg font-bold !leading-tight lg:text-xl">Softrip</h3>
+                  <p class="text-base !leading-tight">Lorem ipsum dolor sit amet, consectetu.</p>
+                </div>
+              </article>
             </div>
           </div>
         </section>

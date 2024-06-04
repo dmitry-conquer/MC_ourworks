@@ -2,24 +2,24 @@ export default class Beforeafter {
   constructor(id) {
     this.slider = document.getElementById(id);
     this.beforePart = this.slider.querySelector(".before");
-    this.pointer = this.slider.querySelector(".pointer");
+    this.pointer = this.slider.querySelector(".pointer ");
+    this.pointerTrigger = this.slider.querySelector(".pointer button");
     this.state = false;
     this.#initListeners();
   }
 
   #initListeners() {
     this.slider.addEventListener("mousemove", e => this.#handleMousemove(e));
-    this.slider.addEventListener("wheel", e => this.#handleWheelscroll(e));
     this.slider.addEventListener("touchmove", e => this.#handleTouchmove(e));
-    this.slider.addEventListener("touchstart", () => this.#updateState());
-    this.slider.addEventListener("touchend", () => this.#handleUpdateState());
-    this.slider.addEventListener("mousedown", () => this.#updateState());
-    this.slider.addEventListener("mouseup", () => this.#handleUpdateState());
-    this.slider.addEventListener("mouseleave", () => this.#handleUpdateState());
+    this.slider.addEventListener("mouseleave", () => this.#handleToPosition());
+    this.pointerTrigger.addEventListener("touchstart", () => this.#updateState());
+    this.pointerTrigger.addEventListener("touchend", () => this.#handleToPosition());
+    this.pointerTrigger.addEventListener("mousedown", e => this.#updateState(e));
+    this.pointerTrigger.addEventListener("mouseup", () => this.#handleToPosition());
   }
 
-  #handleUpdateState() {
-    this.#disableState();
+  #handleToPosition(e) {
+    this.#disableState(e);
     this.beforePart.style.transition = `all 0.3s ease`;
     this.pointer.style.transition = `all 0.3s ease`;
     this.beforePart.style.width = `50%`;
@@ -36,22 +36,9 @@ export default class Beforeafter {
       const procentage = ((e.clientX - this.slider.getBoundingClientRect().left) / sliderWidth) * 100;
       this.beforePart.style.width = `${procentage}%`;
       this.pointer.style.left = `${procentage}%`;
-    }
-  }
-
-  #handleWheelscroll(e) {
-    if (!this.#isMobile()) {
-      e.preventDefault();
-      const delta = Math.sign(e.deltaY);
-      let procentage = parseFloat(this.beforePart.style.width) || 50;
-
-      if (delta > 0 && procentage > 0) {
-        procentage -= 1;
-      } else if (delta < 0 && procentage < 100) {
-        procentage += 1;
+      if (procentage >= 100 || procentage <= 0) {
+        this.#handleToPosition();
       }
-      this.beforePart.style.width = `${procentage}%`;
-      this.pointer.style.left = `${procentage}%`;
     }
   }
 
@@ -60,8 +47,12 @@ export default class Beforeafter {
       const sliderWidth = this.slider.getBoundingClientRect().width;
       const touch = e.touches[0];
       const procentage = ((touch.clientX - this.slider.getBoundingClientRect().left) / sliderWidth) * 100;
+
       this.beforePart.style.width = `${procentage}%`;
       this.pointer.style.left = `${procentage}%`;
+      if (procentage >= 100 || procentage <= 0) {
+        this.#handleToPosition();
+      }
     }
   }
 
