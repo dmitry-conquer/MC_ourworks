@@ -7,4 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const beforeAfterSlider = new Beforeafter(s);
     }
   });
+
+  const actionDelayEls = document.querySelectorAll(".action-delay");
 });

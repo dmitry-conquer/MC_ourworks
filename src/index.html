@@ -5,6 +5,24 @@
     <div class="wrapper bg-primary font-[Archivo]">
       @@include('components/header.html', { })
       <main>
+        <section class="py-[70px] md:pb-[100px] md:pt-[80px] max-md:hidden">
+          <div class="mx-auto max-w-[1270px] px-4">
+            <img src="./img/header.webp" alt="" class="w-full" />
+            <div class="relative">
+              <div class="syncscroll h-[600px] overflow-auto rounded-b-2xl shadow-2xl" name="screen">
+                <div>
+                  <img src="./img/ba_2.webp" alt="desk" class="size-full object-cover" />
+                </div>
+              </div>
+              <div name="screen" class="syncscroll absolute bottom-[80px] max-[1380px]:right-0 right-[-65px] h-[440px] w-[260px] overflow-auto rounded-[25px] bg-white py-2">
+                <div>
+                  <img src="./img/mob_1.webp" alt="mob" class="size-full rounded-[25px] object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="py-[70px] md:pb-[100px] md:pt-[80px]">
           <div class="mx-auto flex max-w-[1182px] flex-col items-center gap-y-[37px] px-4">
             <img src="./img/logo.webp" alt="Logo" class="h-auto w-full max-w-[400px] object-contain md:max-w-[600px]" />
@@ -30,9 +48,9 @@
           </div>
         </section>
 
-        <section class="px-4 pt-[70px] md:pt-[80px]">
+        <section  class="px-4 pt-[70px] md:pt-[80px] action-delay">
           <div class="mx-auto max-w-[1270px]">
-            <h2 class="mb-6 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Before and After</h2>
+            <h2 class="mb-6 text-center max-sm:text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">Before and After</h2>
             <div class="relative mb-14 h-[600px] overflow-x-hidden overflow-y-scroll lg:mb-[129px]">
               <div>
                 <div class="ba-slider lenis-prevent relative mx-auto h-full w-full max-w-[1500px]">
@@ -246,7 +264,7 @@
           </div>
         </section>
 
-        <section class="py-[50px] md:pb-[80px] md:pt-[40px]">
+        <section class=" py-[50px] md:pb-[80px] md:pt-[40px]">
           <div class="mx-auto max-w-[1270px] px-4">
             <h2 class="mb-9 text-center text-3xl font-bold !leading-none text-black sm:text-4xl md:mb-12 md:text-5xl">High-fidelity Prototyping</h2>
             <div class="relative mb-12 flex items-center md:mb-20">
@@ -342,9 +360,12 @@
             </div>
           </div>
         </section>
+
+
+        
       </main>
       @@include('components/footer.html', { })
     </div>
-    <script type="module" crossorigin src="./js/app.min.js"></script>
+    <script type="module" src="./js/app.min.js"></script>
   </body>
 </html>
